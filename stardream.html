@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>8Spark</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body style="background-color: rgb(22, 22, 22);">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#ai" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AI Work</a>
+    <a href="#vr" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VR Work</a>
+    <a href="#community" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Community</a>
+    <a href="#dance" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Dance Videos</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+  </div>
+</div>
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#ai" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">AI Work</a>
+  <a href="#vr" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VR Work</a>
+  <a href="#community" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Community</a>
+  <a href="#dance" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Dance Videos</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <div class="center-text w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1 class="w3-wide"><a href="https://stardream.ai/" target="_blank">Stardream.ai</a></h1>
+      <p class="w3-opacity"><i>An AI agent for generating VR spaces</i></p>
+      <p class="w3-opacity"><i>The AI takes in a prompt, downloads matching models on <a href="https://sketchfab.com/" target="_blank">Sketchfab</a>, generates textures and wall art, and packages all of the content into a zip file.</i></p>
+      <p class="w3-opacity"><i>The user downloads the zip file and unzips it into an empty Unity project.  The content unpacks itself into a VR ready environment.</i></p>
+      <p class="w3-opacity"><i>The whole process takes about 30 minutes.</i></p>
+  </div>
+</div>
+
+
+
+<div class="image-tile-container">
+  <div class="image-tile">
+    <a href="stardream/1.png" target="_blank">
+      <img loading="lazy" src="stardream/1_small.png" alt="Image 1">
+      <div class="overlay">Middle Eastern Ballroom with plants</div>
+    </a>
+  </div>
+  <div class="image-tile">
+    <a href="stardream/3.png" target="_blank">
+      <img loading="lazy" src="stardream/3_small.png" alt="Image 2">
+      <div class="overlay">Space themed bedroom</div>
+    </a>
+  </div>
+  <div class="image-tile">
+    <a href="stardream/4.png" target="_blank">
+      <img loading="lazy" src="stardream/4_small.png" alt="Image 3">
+      <div class="overlay">Glass Ballroom</div>
+    </a>
+  </div>
+  <div class="image-tile">
+    <a href="stardream/5.png" target="_blank">
+      <img loading="lazy" src="stardream/5_small.png" alt="Image 1">
+      <div class="overlay">Cyberpunk Pool</div>
+    </a>
+  </div>
+  <div class="image-tile">
+    <a href="stardream/6.png" target="_blank">
+      <img loading="lazy" src="stardream/6_small.png" alt="Image 1">
+      <div class="overlay">Sakura Treehouse</div>
+    </a>
+  </div>
+  <div class="image-tile">
+    <a href="stardream/7.png" target="_blank">
+      <img loading="lazy" src="stardream/7_small.png" alt="Image 1">
+      <div class="overlay">Fancy Car Showroom</div>
+    </a>
+  </div>
+  
+  <div class="image-tile">
+    <a href="stardream/8.png" target="_blank">
+      <img loading="lazy" src="stardream/8_small.png" alt="Image 1">
+      <div class="overlay">Steampunk Bakery</div>
+    </a>
+  </div>
+  <div class="image-tile">
+    <a href="stardream/9.png" target="_blank">
+      <img loading="lazy" src="stardream/9_small.png" alt="Image 1">
+      <div class="overlay">Cyberpunk Cryo Chamber</div>
+    </a>
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:2000px">
+  <div class="center-text w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <p class="w3-opacity"><i>One half of the AI is a python script that calls into OpenAI apis and the Sketchfab api.</i></p>
+      <p class="w3-opacity"><i>The other half is a Unity C# script that unpacks the AI generated content into a VR world.</i></p>
+  </div>
+</div>
+
+<div class="center-text w3-text-white" id="ai">
+  <br/>
+  <a href="https://stardream.ai/" target="_blank">https://stardream.ai/</a>
+</div>
+
+
+<div class="center-text w3-text-white" id="ai">
+  <br/>
+  <a href="index" target="_blank">Made with <3 by 8Spark</a>
+</div>
+
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+</body>
+</html>
